@@ -3,7 +3,7 @@
   "version": "5.0.1",
   "description": "A NodeJS library for flashing compiled sketch files to Arduino microcontroller boards.",
   "bin": "./bin/cli.js",
-  "main": "avrgirl-arduino-node.js",
+  "main": "/js/global.js",
   "module": "dist/avrgirl-arduino.min.js",
   "scripts": {
     "dev-browser": "webpack --watch",
