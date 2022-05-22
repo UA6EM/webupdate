@@ -1,5 +1,4 @@
 # webupdate
-# webupdate
 Arduino web-update
 Для работы требуется установка пакетов Node.js + Express.js
 Средствами WEB поддерживаются программаторы JS-STK500V1 и JS-ST500V2
