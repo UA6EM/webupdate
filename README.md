@@ -4,7 +4,7 @@ Arduino web-update
 Средствами WEB поддерживаются программаторы JS-STK500V1 и JS-ST500V2
 Взято и дополнено платами на микроконтроллерах atmega 48P, 88P, 168P, 328PB (ядро miniCore)
 
-Вот что пишет автор проекта:
+Вот что пишет автор проекта: https://github.com/noopkat/avrgirl-arduino
 avrgirl-arduino is a NodeJS library written to present a convenient way to upload precompiled sketches to an Arduino. avrgirl-arduino supports a selection of Arduino boards.
 
 The current supported list:
