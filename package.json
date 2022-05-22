@@ -1,0 +1,71 @@
+{
+  "name": "avrgirl-arduino",
+  "version": "5.0.1",
+  "description": "A NodeJS library for flashing compiled sketch files to Arduino microcontroller boards.",
+  "bin": "./bin/cli.js",
+  "main": "avrgirl-arduino-node.js",
+  "module": "dist/avrgirl-arduino.min.js",
+  "scripts": {
+    "dev-browser": "webpack --watch",
+    "lint": "eslint --fix \"tests/*.spec.js\" \"tests/helpers/*.js\" \"avrgirl-arduino.js\" \"lib/*.js\"",
+    "tape": "tape \"tests/*.spec.js\" | tap-spec",
+    "test": "npm run tape && npm run lint",
+    "cover": "istanbul cover ./tests/*.spec.js",
+    "demo": "sh -c 'node tests/demos/$1' --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noopkat/avrgirl-arduino.git"
+  },
+  "keywords": [
+    "arduino",
+    "avr",
+    "avr109",
+    "stk500",
+    "avrdude",
+    "avrgirl",
+    "avrg"
+  ],
+  "author": "Suz Hinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noopkat/avrgirl-arduino/issues"
+  },
+  "homepage": "https://github.com/noopkat/avrgirl-arduino",
+  "dependencies": {
+    "async": "^2.6.3",
+    "awty": "^0.1.0",
+    "browser-serialport": "git+https://github.com/noopkat/browser-serialport.git#c8628c41c11890d3058875994c15f83f2df8185b",
+    "chip.avr.avr109": "^1.1.1",
+    "colors": "^1.4.0",
+    "graceful-fs": "^4.2.4",
+    "intel-hex": "^0.1.2",
+    "minimist": "^1.2.5",
+    "process": "^0.11.10",
+    "serialport": "^9.0.6",
+    "stk500": "^2.0.3",
+    "stk500-v2": "^1.0.4"
+  },
+  "devDependencies": {
+    "jscs-loader": "^0.3.0",
+    "util": "^0.12.3",
+    "buffer": "^6.0.3",
+    "stream-browserify": "^3.0.0",
+    "os-browserify": "^0.3.0",
+    "eslint": "^6.5.0",
+    "istanbul": "^0.4.0",
+    "istanbul-coveralls": "^1.0.3",
+    "proxyquire": "^1.7.3",
+    "sinon": "^9.2.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.1.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "virtual-serialport": "^0.3.1",
+    "webpack": "^5.15.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "browser": {
+    "graceful-fs": false,
+    "serialport": false
+  }
+}
