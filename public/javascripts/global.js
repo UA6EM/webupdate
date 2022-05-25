@@ -259,7 +259,7 @@ var boards = [
   },
   {
     name: 'nano48p',
-    baud: 57600,
+    baud: 19200,
     signature: Buffer.from([0x1e, 0x92, 0x0a]),
     pageSize: 64,
     numPages: 256,
@@ -270,7 +270,7 @@ var boards = [
   },
   {
     name: 'nano48pb',
-    baud: 115200,
+    baud: 19200,
     signature: Buffer.from([0x1e, 0x92, 0x10]),
     pageSize: 64,
     numPages: 256,
@@ -281,7 +281,7 @@ var boards = [
   },	
   {
     name: 'nano88p',
-    baud: 57600,
+    baud: 115200,
     signature: Buffer.from([0x1e, 0x93, 0x0f]),
     pageSize: 64,
     numPages: 256,
@@ -303,7 +303,7 @@ var boards = [
   },
   {
     name: 'nano168p',
-    baud: 57600,
+    baud: 115200,
     signature: Buffer.from([0x1e, 0x94, 0x0b]),
     pageSize: 128,
     numPages: 256,
