@@ -433,6 +433,17 @@ var boards = [
     protocol: 'stk500v2'
   },
   {
+    name: 'mega128',
+    baud: 115200,
+    signature: Buffer.from([0x1e, 0x97, 0x02]), // ATmega2560
+    pageSize: 256,
+    numPages: 512,
+    timeout: 400,
+    productId: ['0x0042', '0x6001', '0x0010', '0x7523'],
+    productPage: 'https://store.arduino.cc/',
+    protocol: 'stk500v1'
+  },
+  {
     name: 'adk',
     baud: 115200,
     signature: Buffer.from([0x1e, 0x98, 0x01]), // ATmega2560
