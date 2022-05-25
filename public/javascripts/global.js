@@ -313,6 +313,17 @@ var boards = [
     protocol: 'stk500v1'
   },
   {
+    name: 'nano168pc',
+    baud: 19200,
+    signature: Buffer.from([0x1e, 0x94, 0x0b]),
+    pageSize: 128,
+    numPages: 256,
+    timeout: 400,
+    productId: ['0x6001', '0x7523'],
+    productPage: 'https://web.archive.org/web/20150813095112/https://www.arduino.cc/en/Main/ArduinoBoardNano',
+    protocol: 'stk500v1'
+  },
+  {
     name: 'nano168pb',
     baud: 115200,
     signature: Buffer.from([0x1e, 0x94, 0x15]),
